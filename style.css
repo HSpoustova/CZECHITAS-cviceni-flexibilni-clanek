@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -15,7 +17,8 @@ img {
   max-width: 100%;
 }
 
-p, h2 {
+p,
+h2 {
   padding: 0;
 }
 
@@ -31,9 +34,32 @@ h2 {
   background: white;
 }
 
-.article__text, 
+.article__text,
 .article__image {
   padding: 1em;
+}
+
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.article__image {
+  min-width: 250px;
+  max-width: 300px;
+  flex-grow: 1;
+  flex-basis: 40%;
+  flex-shrink: 1;
+
+}
+
+.article__text {
+  flex-grow: 1;
+  flex-basis: 60%;
+  flex-shrink: 1;
 }
 
 /* Zde je místo pro vaše styly.*/
